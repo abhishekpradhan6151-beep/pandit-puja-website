@@ -1118,3 +1118,47 @@ select {
         padding: 40px 22px;
     }
 }
+/* Typography & Button Spacing */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.brand-name {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.2px;
+}
+
+.service-detail-text p {
+    line-height: 1.8;
+}
+
+.service-buttons,
+.service-cta .service-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.service-buttons .btn {
+    margin: 0;
+}
+
+.service-detail-text .btn {
+    margin-right: 0;
+}
+
+/* Better mobile button spacing */
+@media (max-width: 768px) {
+    .service-buttons {
+        gap: 14px;
+    }
+
+    .service-buttons .btn {
+        margin-bottom: 0;
+    }
+}
