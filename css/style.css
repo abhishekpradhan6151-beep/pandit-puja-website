@@ -694,3 +694,46 @@ select {
     gap: 30px;
   }
 }
+/* =========================
+   MOBILE & TABLET NAVIGATION
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--primary);
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 0.25rem;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--light);
+        padding: 1rem 1.25rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        flex-direction: column;
+        gap: 0.8rem;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 0.7rem 0;
+    }
+}
