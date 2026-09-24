@@ -737,3 +737,73 @@ select {
         padding: 0.7rem 0;
     }
 }
+/* ================================
+   SERVICES GRID - PREMIUM LAYOUT
+================================ */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(60, 30, 20, 0.10);
+    border: 1px solid rgba(139, 30, 30, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(60, 30, 20, 0.16);
+}
+
+.service-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card-content {
+    padding: 18px 20px 20px;
+}
+
+.service-card h3 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    color: var(--dark);
+}
+
+.service-link {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.service-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card img {
+        height: 220px;
+    }
+}
