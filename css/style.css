@@ -1558,7 +1558,7 @@ h4,
 /* DECORATIVE LEAF UNDER PANDIT NAME */
 
 .about-name strong::after {
-    content: "❧";
+    content: "✥";
     display: block;
     margin-top: 10px;
     color: var(--secondary);
