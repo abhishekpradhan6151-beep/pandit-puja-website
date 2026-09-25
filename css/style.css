@@ -1565,3 +1565,208 @@ h4,
     font-size: 1.5rem;
     line-height: 1;
 }
+/* =================================
+   PREMIUM ONLINE PUJA SECTION
+   ================================= */
+
+.online-puja-section {
+    padding: 90px 0;
+    background: var(--cream);
+}
+
+.online-puja-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.online-puja-section .section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--primary);
+    font-size: clamp(2.3rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.online-puja-section .section-heading > p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.online-puja-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.online-puja-info,
+.online-puja-visual {
+    border-radius: 24px;
+}
+
+.online-puja-info {
+    padding: 45px;
+    background: #fff;
+    border: 1px solid rgba(217, 154, 43, 0.16);
+    box-shadow: 0 15px 40px rgba(60, 30, 20, 0.08);
+}
+
+.online-puja-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.online-puja-title span {
+    font-size: 2rem;
+}
+
+.online-puja-title h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+.online-puja-info > p {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.online-puja-points {
+    display: grid;
+    gap: 14px;
+    margin: 30px 0;
+    padding-top: 25px;
+    border-top: 1px solid rgba(217, 154, 43, 0.2);
+}
+
+.online-puja-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.online-puja-point span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background: var(--cream);
+    border: 1px solid rgba(217, 154, 43, 0.25);
+    border-radius: 50%;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.online-puja-point p {
+    margin: 0;
+    color: var(--text);
+}
+
+.online-puja-info .btn {
+    margin-top: 5px;
+}
+
+/* VISUAL CARD */
+
+.online-puja-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 430px;
+    padding: 35px;
+    background:
+        linear-gradient(rgba(101, 19, 19, 0.78), rgba(101, 19, 19, 0.78)),
+        var(--cream);
+    box-shadow: 0 15px 40px rgba(60, 30, 20, 0.10);
+}
+
+.online-puja-card {
+    width: 100%;
+    max-width: 390px;
+    padding: 45px 35px;
+    text-align: center;
+    background: rgba(255, 248, 237, 0.97);
+    border: 1px solid rgba(231, 184, 75, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(30, 10, 10, 0.15);
+}
+
+.online-puja-symbol {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--secondary);
+    font-size: 4rem;
+}
+
+.online-puja-card h3 {
+    margin: 0 0 15px;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.online-puja-card p {
+    margin: 0;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .online-puja-content {
+        grid-template-columns: 1fr;
+    }
+
+    .online-puja-visual {
+        min-height: 350px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .online-puja-section {
+        padding: 65px 16px;
+    }
+
+    .online-puja-section .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .online-puja-info {
+        padding: 30px 22px;
+    }
+
+    .online-puja-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .online-puja-info > p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .online-puja-visual {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .online-puja-card {
+        padding: 35px 22px;
+    }
+
+}
