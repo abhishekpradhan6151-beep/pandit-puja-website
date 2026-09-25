@@ -688,7 +688,7 @@ select {
   }
 
   .about-image img {
-    height: 420px;
+    height: auto;
   }
 
   .booking-form {
