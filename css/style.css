@@ -200,6 +200,10 @@ select {
   background: var(--secondary);
   color: var(--dark);
 }
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+}
 
 .btn-outline {
   border-color: var(--primary);
