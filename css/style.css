@@ -1770,3 +1770,26 @@ h4,
     }
 
 }
+.online-om {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    color: var(--secondary);
+    background: var(--cream);
+    border: 1px solid rgba(217, 154, 43, 0.25);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* ONLINE PUJA — VISUAL FIRST */
+
+.online-puja-visual {
+    order: 1;
+}
+
+.online-puja-info {
+    order: 2;
+}
