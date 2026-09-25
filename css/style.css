@@ -1527,3 +1527,25 @@ h4,
     height: 1px;
     background: var(--secondary);
 }
+/* ABOUT SECTION FINAL SPACING */
+
+.about-section .section-heading {
+    max-width: 1100px;
+    margin-bottom: 32px;
+}
+
+.about-section .section-heading h2 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.about-section .about-content {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .about-section .section-heading h2 {
+        white-space: normal;
+    }
+}
