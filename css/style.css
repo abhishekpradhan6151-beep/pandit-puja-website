@@ -213,9 +213,10 @@ select {
 
 .hero {
   position: relative;
-  min-height: 680px;
+  min-height: 620px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background:
     linear-gradient(
       90deg,
