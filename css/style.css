@@ -270,7 +270,7 @@ select {
    ABOUT
    ------------------------- */
 
-.about-grid {
+.about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 55px;
