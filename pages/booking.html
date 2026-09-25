@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Puja | Website Name</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="../index.html" class="brand-name">Website Name</a>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#services">Puja Services</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#online-puja">Online Puja</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#faq">FAQ</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="booking-page">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">BOOK A PUJA</p>
+                <h1>Book Your Puja</h1>
+                <p>
+                    Share your puja requirements and preferred date and time.
+                    Our team will contact you to confirm the booking.
+                </p>
+            </div>
+
+            <div class="booking-box">
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Enter your mobile number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="puja">Puja / Service Required</label>
+                        <select id="puja" name="puja" required>
+                            <option value="">Select a puja or service</option>
+                            <option>Mahāmṛtyuñjaya Jaap</option>
+                            <option>Mangal Dosh Pooja</option>
+                            <option>Pitra Dosh Poojan</option>
+                            <option>Kaal Sarp Dosh Pooja</option>
+                            <option>Navgraha Shanti</option>
+                            <option>Rudrabhishek</option>
+                            <option>Dosh Nivaran</option>
+                            <option>Other Puja / Service</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input
+                                type="date"
+                                id="date"
+                                name="date"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input
+                                type="time"
+                                id="time"
+                                name="time"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Booking Request
+                    </button>
+
+                    <p class="booking-note">
+                        Your preferred date and time are subject to confirmation.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
