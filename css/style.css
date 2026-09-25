@@ -1171,3 +1171,12 @@ h4,
     object-fit: initial;
     display: block;
 }
+.services-section .services-grid {
+    padding: 0 24px;
+}
+
+@media (max-width: 600px) {
+    .services-section .services-grid {
+        padding: 0 16px;
+    }
+}
