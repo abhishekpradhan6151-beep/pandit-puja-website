@@ -347,7 +347,7 @@ select {
 .trust-list {
   display: grid;
   gap: 12px;
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 .trust-item {
