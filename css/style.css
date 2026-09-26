@@ -2383,6 +2383,11 @@ h4,
     border-radius: 50%;
     font-size: 1.5rem;
 }
+.contact-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+}
 
 .contact-detail h4 {
     margin: 0 0 5px;
