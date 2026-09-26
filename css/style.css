@@ -2240,3 +2240,7 @@ h4,
         margin-bottom: 15px;
     }
 }
+.trust-section .trust-grid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
