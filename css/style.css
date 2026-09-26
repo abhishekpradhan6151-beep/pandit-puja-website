@@ -361,6 +361,17 @@ select {
     border-radius: 18px;
     box-shadow: 0 12px 35px rgba(60, 30, 20, 0.10);
 }
+.trust-item h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.trust-item p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
 
 .trust-item strong {
   color: var(--dark);
