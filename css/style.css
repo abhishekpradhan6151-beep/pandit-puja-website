@@ -445,12 +445,12 @@ select {
     margin-bottom: 30px;
 }
 
-.trust-section .section-title h2 {
-  color: var(--white);
+.trust-section .section-heading h2 {
+    color: var(--white);
 }
 
-.trust-section .section-title p {
-  color: rgba(255,255,255,0.78);
+.trust-section .section-heading p {
+    color: rgba(255,255,255,0.78);
 }
 
 .trust-grid {
