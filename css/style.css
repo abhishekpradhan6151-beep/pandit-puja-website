@@ -2088,3 +2088,6 @@ h4,
         gap: 0;
     }
 }
+ .trust-section .trust-grid {
+    margin-top: -180px;
+}
