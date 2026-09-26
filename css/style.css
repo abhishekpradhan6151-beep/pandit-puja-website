@@ -2098,3 +2098,8 @@ h4,
 .trust-section .trust-list {
     margin-top: 0;
 }
+.trust-section .section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
