@@ -2103,3 +2103,140 @@ h4,
     line-height: 1.2;
     margin-bottom: 20px;
 }
+/* ========================================
+   WHY CHOOSE US — PREMIUM DESIGN
+======================================== */
+
+.trust-section {
+    padding: 55px 0 70px;
+    background: var(--primary);
+    color: #fff;
+}
+
+.trust-section .section-heading {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.trust-section .section-label {
+    margin: 0;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.trust-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.trust-ornament span:first-child,
+.trust-ornament span:last-child {
+    width: 80px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.trust-ornament span:nth-child(2) {
+    color: var(--gold);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.trust-section .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.trust-section .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 255px;
+    padding: 28px 25px 30px;
+    text-align: center;
+    background: #fffdf8;
+    border: 1px solid rgba(217,154,43,.18);
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(60,30,20,.12);
+    box-sizing: border-box;
+}
+
+.trust-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #fff3df;
+    color: var(--primary);
+    border: 1px solid rgba(217,154,43,.15);
+    font-size: 2rem;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.trust-section .trust-item h3 {
+    margin: 0 0 10px;
+    color: var(--primary);
+    font-size: 1.45rem;
+    line-height: 1.25;
+}
+
+.trust-section .trust-item p {
+    margin: 0;
+    max-width: 300px;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .trust-section .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .trust-section {
+        padding: 50px 0 60px;
+    }
+
+    .trust-section .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .trust-section .trust-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        gap: 18px;
+    }
+
+    .trust-section .trust-item {
+        min-height: 230px;
+        padding: 25px 20px;
+    }
+
+    .trust-ornament span:first-child,
+    .trust-ornament span:last-child {
+        width: 50px;
+    }
+
+    .trust-icon {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 15px;
+    }
+}
