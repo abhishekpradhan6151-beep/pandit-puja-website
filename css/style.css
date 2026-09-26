@@ -2253,3 +2253,12 @@ h4,
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+.trust-section .trust-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: none !important;
+    stroke: var(--primary) !important;
+    stroke-width: 1.7 !important;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
