@@ -2244,3 +2244,12 @@ h4,
     padding-left: 50px;
     padding-right: 50px;
 }
+.trust-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
