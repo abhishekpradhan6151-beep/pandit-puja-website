@@ -59,3 +59,42 @@ if (bookingForm) {
         window.location.href = whatsappURL;
     });
 }
+/* ================================
+   CONTACT PAGE FORM
+================================ */
+
+const contactPageForm = document.querySelector("#contact-page-form");
+
+if (contactPageForm) {
+    contactPageForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#page-contact-name")?.value.trim();
+        const mobile = document.querySelector("#page-contact-mobile")?.value.trim();
+        const puja = document.querySelector("#page-contact-puja")?.value;
+        const date = document.querySelector("#page-contact-date")?.value;
+        const time = document.querySelector("#page-contact-time")?.value;
+
+        if (!name || !mobile || !puja || !date || !time) {
+            alert("Please fill in all enquiry details.");
+            return;
+        }
+
+        const message =
+            "Namaste Pandit Ji,%0A%0A" +
+            "I have an enquiry regarding a puja.%0A%0A" +
+            "Name: " + encodeURIComponent(name) + "%0A" +
+            "Mobile: " + encodeURIComponent(mobile) + "%0A" +
+            "Puja / Service: " + encodeURIComponent(puja) + "%0A" +
+            "Preferred Date: " + encodeURIComponent(date) + "%0A" +
+            "Preferred Time: " + encodeURIComponent(time) + "%0A%0A" +
+            "Please contact me to confirm the details.";
+
+        const whatsappURL =
+            "https://wa.me/919826484802?text=" + message;
+
+        alert("Your enquiry is ready. You will now be redirected to WhatsApp.");
+
+        window.location.href = whatsappURL;
+    });
+}
