@@ -2994,3 +2994,138 @@ h4,
         gap: 12px;
     }
 }
+/* ================================
+   FINAL BOOKING CTA
+================================ */
+
+.final-cta {
+    padding: 85px 24px;
+    background: var(--cream);
+}
+
+.cta-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 65px 50px;
+    text-align: center;
+    background: var(--primary);
+    border: 1px solid rgba(231, 184, 75, 0.35);
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(60, 30, 20, 0.16);
+    box-sizing: border-box;
+}
+
+.cta-label {
+    margin: 0;
+    color: var(--gold);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.cta-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px auto 20px;
+}
+
+.cta-ornament span {
+    width: 75px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.cta-ornament strong {
+    color: var(--gold);
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.cta-inner h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.cta-description {
+    max-width: 760px;
+    margin: 20px auto 32px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.cta-buttons .btn {
+    min-width: 175px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cta-buttons .primary-btn {
+    background: #fff;
+    color: var(--primary);
+}
+
+.cta-buttons .primary-btn:hover {
+    background: var(--cream);
+}
+
+.cta-buttons .whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+}
+
+.cta-buttons .whatsapp-btn:hover {
+    background: #20bd5a;
+}
+
+.cta-buttons .secondary-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.cta-buttons .secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+
+    .final-cta {
+        padding: 55px 16px;
+    }
+
+    .cta-inner {
+        padding: 45px 22px;
+        border-radius: 22px;
+    }
+
+    .cta-ornament span {
+        width: 50px;
+    }
+
+    .cta-description {
+        font-size: 0.95rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        min-width: 0;
+    }
+}
