@@ -3129,3 +3129,380 @@ h4,
         min-width: 0;
     }
 }
+/* ================================
+   ABOUT PANDIT JI PAGE
+================================ */
+
+.about-page-hero {
+    padding: 75px 20px 70px;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+
+.about-page-heading {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-page-heading .section-label {
+    margin: 0;
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-page-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 17px auto 18px;
+}
+
+.about-page-ornament span {
+    width: 75px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.about-page-ornament strong {
+    color: var(--gold);
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.about-page-heading h1 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
+}
+
+.about-page-heading > p:last-child {
+    margin: 15px 0 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+}
+
+
+/* Main about card */
+
+.about-page-section {
+    padding: 80px 24px;
+    background: var(--cream);
+}
+
+.about-page-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 42px;
+    padding: 42px;
+    background: #fffdf8;
+    border: 1px solid rgba(217, 154, 43, 0.18);
+    border-radius: 26px;
+    box-shadow: 0 18px 45px rgba(60, 30, 20, 0.12);
+    box-sizing: border-box;
+}
+
+
+/* Profile */
+
+.about-page-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-page-image-wrap {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    background: #eee;
+}
+
+.about-page-image-wrap img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+.about-page-name {
+    padding: 24px 20px 22px;
+    text-align: center;
+    background: var(--cream);
+    border: 1px solid rgba(217, 154, 43, 0.15);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+
+.about-page-name span {
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-page-name h2 {
+    margin: 8px 0 10px;
+    color: var(--primary);
+    font-size: 1.55rem;
+}
+
+.about-page-name-line {
+    width: 45px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--gold);
+}
+
+
+/* Content */
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-page-title-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    border: 1px solid rgba(217, 154, 43, 0.2);
+    border-radius: 14px;
+    background: var(--cream);
+}
+
+.about-page-title-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(217, 154, 43, 0.15);
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.about-page-title-box h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.about-page-content > p {
+    margin: 0 0 16px;
+    color: var(--text);
+    line-height: 1.85;
+    font-size: 1rem;
+}
+
+
+/* Divider */
+
+.about-page-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0 28px;
+}
+
+.about-page-divider span {
+    flex: 1;
+    height: 1px;
+    background: rgba(217, 154, 43, 0.4);
+}
+
+.about-page-divider strong {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+
+/* Highlights */
+
+.about-page-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.about-page-highlight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 12px;
+    border: 1px solid rgba(217, 154, 43, 0.16);
+    border-radius: 14px;
+    background: #fff;
+}
+
+.about-page-highlight-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(139, 30, 30, 0.08);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.about-page-highlight strong,
+.about-page-highlight small {
+    display: block;
+}
+
+.about-page-highlight strong {
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.about-page-highlight small {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+
+/* WhatsApp button */
+
+.about-page-button {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.about-page-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.about-page-button span {
+    font-size: 1.1rem;
+}
+
+
+/* Service area */
+
+.about-page-service-area {
+    padding: 75px 24px;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+
+.about-page-service-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-page-service-area .section-label {
+    margin: 0 0 12px;
+    color: var(--gold);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-page-service-area h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+.about-page-service-area p:not(.section-label) {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: rgba(255, 255, 255, 0.84);
+    line-height: 1.8;
+}
+
+.about-page-service-points {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.about-page-service-points span {
+    padding: 10px 18px;
+    border: 1px solid rgba(231, 184, 75, 0.45);
+    border-radius: 30px;
+    color: var(--gold);
+    font-size: 0.9rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .about-page-card {
+        grid-template-columns: 1fr;
+        padding: 28px;
+    }
+
+    .about-page-image-wrap img {
+        height: 430px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-page-hero {
+        padding: 60px 18px;
+    }
+
+    .about-page-section {
+        padding: 50px 16px;
+    }
+
+    .about-page-card {
+        padding: 18px;
+        gap: 28px;
+        border-radius: 20px;
+    }
+
+    .about-page-image-wrap img {
+        height: 390px;
+    }
+
+    .about-page-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page-highlight {
+        padding: 13px;
+    }
+
+    .about-page-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-page-service-area {
+        padding: 55px 18px;
+    }
+}
