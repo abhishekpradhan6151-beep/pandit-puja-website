@@ -3611,3 +3611,84 @@ h4,
         padding: 50px 20px;
     }
 }
+/* =========================
+   Gallery Page Hero
+========================= */
+
+.gallery-page-hero {
+    padding: 85px 20px 70px;
+    background: var(--cream);
+    text-align: center;
+}
+
+.gallery-page-heading {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.gallery-page-label {
+    margin: 0 0 18px;
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.gallery-page-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.gallery-page-ornament span {
+    width: 65px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.gallery-page-ornament strong {
+    color: var(--gold);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.gallery-page-heading h1 {
+    margin: 0 0 18px;
+    color: var(--primary);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+.gallery-page-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #5f514b;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   Gallery Page Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    .gallery-page-hero {
+        padding: 65px 18px 55px;
+    }
+
+    .gallery-page-heading h1 {
+        font-size: 2.1rem;
+    }
+
+    .gallery-page-ornament span {
+        width: 45px;
+    }
+
+    .gallery-page-heading p {
+        font-size: 0.98rem;
+    }
+}
