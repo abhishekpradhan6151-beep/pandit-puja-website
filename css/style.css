@@ -4597,3 +4597,16 @@ h4,
         object-fit: contain;
     }
 }
+/* iPad / Tablet Pandit Ji Photo Fix */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .about-page-image-wrap {
+        overflow: hidden;
+    }
+
+    .about-page-image-wrap img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
