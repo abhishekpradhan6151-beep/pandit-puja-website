@@ -4189,3 +4189,95 @@ h4,
         padding: 5px;
     }
 }
+/* =========================
+   MOBILE HEADER FINAL FIX
+========================= */
+
+@media (max-width: 800px) {
+
+    .main-navbar .navbar {
+        width: 100%;
+        max-width: 100%;
+        min-height: 88px;
+        padding: 0 14px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: visible;
+    }
+
+    .main-navbar .brand {
+        min-width: 0;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-navbar .brand-logo {
+        width: 145px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .header-book-btn {
+        flex: 0 0 auto;
+        margin-left: auto;
+        min-width: 0;
+        padding: 11px 15px;
+        font-size: 0.82rem;
+        white-space: nowrap;
+    }
+
+    .main-navbar .menu-toggle {
+        display: flex !important;
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 1002;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: var(--primary);
+        background: transparent;
+        border: 0;
+    }
+
+    .main-navbar .nav-menu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1001;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-navbar .navbar {
+        min-height: 78px;
+        padding: 0 10px;
+        gap: 7px;
+    }
+
+    .main-navbar .brand-logo {
+        width: 125px;
+    }
+
+    .header-book-btn {
+        padding: 10px 12px;
+        font-size: 0.76rem;
+    }
+
+    .main-navbar .menu-toggle {
+        flex-basis: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.7rem;
+    }
+}
