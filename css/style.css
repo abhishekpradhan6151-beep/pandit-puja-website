@@ -4386,3 +4386,70 @@ h4,
     }
 
 }
+/* iPad / Tablet Header Fix */
+@media (max-width: 1100px) {
+
+    .main-navbar .navbar {
+        position: relative;
+        min-height: 90px;
+        padding: 0 70px 0 16px;
+        box-sizing: border-box;
+    }
+
+    .main-navbar .brand-logo {
+        width: 160px;
+    }
+
+    .header-book-btn {
+        position: absolute;
+        right: 65px;
+        top: 50%;
+        transform: translateY(-50%);
+        min-width: auto;
+        padding: 11px 16px;
+        font-size: 0.85rem;
+    }
+
+    .main-navbar .menu-toggle {
+        display: flex !important;
+        position: absolute !important;
+        right: 12px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 44px !important;
+        height: 44px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: var(--primary) !important;
+        border: none !important;
+        border-radius: 50% !important;
+        z-index: 2000 !important;
+    }
+
+    .main-navbar .menu-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin: 3px 0;
+        background: #ffffff;
+        border-radius: 2px;
+    }
+
+    .main-navbar .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #fffaf2;
+        z-index: 1999;
+    }
+
+    .main-navbar .nav-menu.active {
+        display: flex;
+    }
+}
