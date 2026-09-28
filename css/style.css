@@ -3859,3 +3859,330 @@ h4,
         height: 240px;
     }
 }
+/* =========================
+   FINAL HOMEPAGE HEADER
+========================= */
+
+.site-header {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    background: #fffaf2;
+}
+
+
+/* ---------- Top Information Bar ---------- */
+
+.top-info-bar {
+    width: 100%;
+    background: var(--primary);
+    color: #fffaf2;
+}
+
+.top-info-inner {
+    max-width: 1400px;
+    min-height: 42px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    box-sizing: border-box;
+    font-size: 0.86rem;
+}
+
+.top-info-left,
+.top-info-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.top-info-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #fffaf2;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.top-info-icon {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.whatsapp-top .top-info-icon {
+    color: #25d366;
+}
+
+.top-info-divider {
+    width: 1px;
+    height: 19px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.top-info-right {
+    color: #f6dfaa;
+    white-space: nowrap;
+}
+
+
+/* ---------- Main Navigation ---------- */
+
+.main-navbar {
+    width: 100%;
+    background: #fffaf2;
+    border-bottom: 1px solid rgba(100, 55, 35, 0.15);
+}
+
+.main-navbar .navbar {
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Logo */
+
+.main-navbar .brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.main-navbar .brand-logo {
+    width: 205px;
+    height: auto;
+    display: block;
+}
+
+
+/* Navigation */
+
+.main-navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.main-navbar .nav-menu a {
+    position: relative;
+    padding: 8px 0;
+    color: #3e302a;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.25s ease;
+}
+
+.main-navbar .nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width 0.25s ease;
+}
+
+.main-navbar .nav-menu a:hover,
+.main-navbar .nav-menu a.active {
+    color: var(--primary);
+}
+
+.main-navbar .nav-menu a:hover::after,
+.main-navbar .nav-menu a.active::after {
+    width: 100%;
+}
+
+
+/* Book a Puja Button */
+
+.header-book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-width: 170px;
+    padding: 14px 22px;
+    border-radius: 30px;
+    background: var(--gold);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.98rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 7px 18px rgba(180, 120, 20, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.header-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(180, 120, 20, 0.30);
+}
+
+.header-book-btn span {
+    font-size: 1rem;
+}
+
+
+/* Mobile Menu Button */
+
+.main-navbar .menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: var(--primary);
+    font-size: 2rem;
+    line-height: 1;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1100px) {
+
+    .top-info-right {
+        display: none;
+    }
+
+    .main-navbar .nav-menu {
+        gap: 20px;
+    }
+
+    .main-navbar .nav-menu a {
+        font-size: 0.94rem;
+    }
+
+    .main-navbar .brand-logo {
+        width: 185px;
+    }
+
+    .header-book-btn {
+        min-width: 145px;
+        padding: 13px 18px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 800px) {
+
+    .top-info-inner {
+        min-height: 38px;
+        padding: 0 15px;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.76rem;
+    }
+
+    .top-info-left {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .top-info-left .top-info-item:first-child {
+        display: none;
+    }
+
+    .top-info-divider {
+        height: 16px;
+    }
+
+    .main-navbar .navbar {
+        min-height: 88px;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 10px;
+    }
+
+    .main-navbar .brand-logo {
+        width: 175px;
+    }
+
+    .main-navbar .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 18px 20px 22px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fffaf2;
+        border-top: 1px solid rgba(100, 55, 35, 0.12);
+        border-bottom: 1px solid rgba(100, 55, 35, 0.15);
+        box-shadow: 0 12px 25px rgba(60, 30, 20, 0.12);
+    }
+
+    .main-navbar .nav-menu.active {
+        display: flex;
+    }
+
+    .main-navbar .nav-menu a {
+        padding: 14px 5px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(100, 55, 35, 0.08);
+    }
+
+    .main-navbar .nav-menu a:last-child {
+        border-bottom: 0;
+    }
+
+    .header-book-btn {
+        min-width: auto;
+        margin-left: auto;
+        padding: 12px 17px;
+        font-size: 0.88rem;
+    }
+
+    .header-book-btn span {
+        display: none;
+    }
+
+    .main-navbar .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 500px) {
+
+    .top-info-inner {
+        font-size: 0.7rem;
+    }
+
+    .main-navbar .brand-logo {
+        width: 150px;
+    }
+
+    .main-navbar .navbar {
+        min-height: 78px;
+    }
+
+    .header-book-btn {
+        padding: 10px 13px;
+        font-size: 0.78rem;
+    }
+
+    .main-navbar .menu-toggle {
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+}
