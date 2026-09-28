@@ -4373,3 +4373,16 @@ h4,
         font-size: 1.55rem !important;
     }
 }
+/* Hamburger icon */
+@media (max-width: 800px) {
+
+    .main-navbar .menu-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin: 4px 0;
+        background: #ffffff;
+        border-radius: 2px;
+    }
+
+}
