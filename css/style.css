@@ -4561,3 +4561,26 @@ h4,
     stroke-linejoin: round;
     display: block;
 }
+.footer-content {
+    grid-template-columns: 1.35fr 1fr 1.35fr 1.15fr;
+}
+
+.footer-contact {
+    min-width: 0;
+}
+
+.footer-contact a,
+.footer-contact p {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-contact a,
+    .footer-contact p {
+        white-space: normal;
+    }
+}
