@@ -1,22 +1,24 @@
 // Mobile menu
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (menuToggle && navMenu) {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (!menuToggle || !navMenu) {
+        return;
+    }
 
     menuToggle.addEventListener("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
 
-        const isOpen = navMenu.classList.contains("active");
+        navMenu.classList.toggle("active");
 
-        if (isOpen) {
-            navMenu.classList.remove("active");
-            menuToggle.setAttribute("aria-expanded", "false");
-        } else {
-            navMenu.classList.add("active");
-            menuToggle.setAttribute("aria-expanded", "true");
-        }
+        const isOpen = navMenu.classList.contains("active");
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
     });
 
     navMenu.querySelectorAll("a").forEach(function (link) {
@@ -26,7 +28,7 @@ if (menuToggle && navMenu) {
         });
     });
 
-}
+});
 
 // FAQ accordion
 document.querySelectorAll(".faq-question").forEach(question => {
