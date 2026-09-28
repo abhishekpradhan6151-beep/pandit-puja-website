@@ -3692,3 +3692,170 @@ h4,
         font-size: 0.98rem;
     }
 }
+/* =========================
+   Puja Services Page
+========================= */
+
+.services-page-hero {
+    padding: 85px 20px 70px;
+    background: var(--cream);
+    text-align: center;
+}
+
+.services-page-heading {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.services-page-label {
+    margin: 0 0 18px;
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.services-page-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.services-page-ornament span {
+    width: 65px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.services-page-ornament strong {
+    color: var(--gold);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.services-page-heading h1 {
+    margin: 0 0 18px;
+    color: var(--primary);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+.services-page-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #5f514b;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+
+/* Services Grid */
+
+.services-page-section {
+    padding: 70px 24px;
+    background: #fffaf3;
+}
+
+.services-page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-page-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(217, 154, 43, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(60, 30, 20, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(60, 30, 20, 0.15);
+}
+
+.services-page-card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.services-page-card-content {
+    padding: 25px 24px 28px;
+    text-align: center;
+}
+
+.services-page-card-content h2 {
+    margin: 0 0 12px;
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.services-page-card-content p {
+    margin: 0 0 20px;
+    color: #5f514b;
+    line-height: 1.7;
+}
+
+.services-page-card-content a {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 7px;
+    background: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.services-page-card-content a:hover {
+    background: var(--gold);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .services-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .services-page-hero {
+        padding: 65px 18px 55px;
+    }
+
+    .services-page-heading h1 {
+        font-size: 2.1rem;
+    }
+
+    .services-page-ornament span {
+        width: 45px;
+    }
+
+    .services-page-heading p {
+        font-size: 0.98rem;
+    }
+
+    .services-page-section {
+        padding: 50px 16px;
+    }
+
+    .services-page-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .services-page-card img {
+        height: 240px;
+    }
+}
