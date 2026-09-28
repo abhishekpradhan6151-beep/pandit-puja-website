@@ -3,17 +3,43 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
 if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
-}
 
-// Close mobile menu after clicking a link
-document.querySelectorAll(".nav-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        navMenu?.classList.remove("active");
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        navMenu.classList.toggle("active");
+
+        const isOpen = navMenu.classList.contains("active");
+        menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
-});
+
+
+    // Close menu after selecting a navigation link
+    navMenu.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+        });
+
+    });
+
+
+    // Close menu when tapping outside it
+    document.addEventListener("click", function (event) {
+
+        if (
+            navMenu.classList.contains("active") &&
+            !navMenu.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+            navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
+
+    });
+
+}
 
 // FAQ accordion
 document.querySelectorAll(".faq-question").forEach(question => {
