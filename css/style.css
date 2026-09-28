@@ -4189,3 +4189,20 @@ h4,
         width: 20px;
     }
 }
+/* Header Book a Puja Icon */
+
+.header-book-btn .booking-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-book-btn .booking-icon svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
