@@ -30,13 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// FAQ accordion
-document.querySelectorAll(".faq-question").forEach(question => {
-    question.addEventListener("click", () => {
-        const item = question.parentElement;
-        item.classList.toggle("active");
-    });
-});
+
 
 // Booking form → WhatsApp
 const bookingForm = document.querySelector("#booking-form");
