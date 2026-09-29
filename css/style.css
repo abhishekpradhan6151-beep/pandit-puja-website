@@ -589,7 +589,7 @@ select {
 
 .faq-item {
   border-bottom: 1px solid var(--border);
-  padding: 14px 0;
+  padding: 8px 0;
 }
 
 .faq-item h3 {
