@@ -1938,6 +1938,9 @@ h4,
         height: 300px;
     }
 }
+.faq-section .section-heading {
+    margin-bottom: 30px;
+}
 /* =========================
    PREMIUM FAQ
 ========================= */
