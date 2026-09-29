@@ -541,12 +541,18 @@ function translatePageToHindi() {
     while (walker.nextNode()) {
         const node = walker.currentNode;
         const originalText = node.nodeValue.trim();
+const normalizedText = originalText.replace(/\s+/g, " ");
 
-        if (translations[originalText]) {
-            node.nodeValue = node.nodeValue.replace(
-                originalText,
-                translations[originalText]
-            );
+const translationKey = Object.keys(translations).find(
+    key => key.replace(/\s+/g, " ") === normalizedText
+);
+
+if (translationKey) {
+    node.nodeValue = node.nodeValue.replace(
+        originalText,
+        translations[translationKey]
+    );
+}
         }
     }
 }
