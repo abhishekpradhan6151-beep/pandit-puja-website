@@ -268,9 +268,7 @@ function translatePageToHindi() {
             acceptNode: function (node) {
                 if (
                     !node.parentElement ||
-                    ["SCRIPT", "STYLE", "NOSCRIPT"].includes(
-                        node.parentElement.tagName
-                    )
+                    ["SCRIPT", "STYLE", "NOSCRIPT"].includes(node.parentElement.tagName)
                 ) {
                     return NodeFilter.FILTER_REJECT;
                 }
@@ -284,20 +282,14 @@ function translatePageToHindi() {
 
     while (walker.nextNode()) {
         const node = walker.currentNode;
-        const originalText = node.nodeValue;
+        const originalText = node.nodeValue.trim();
 
-        let translatedText = originalText;
-
-        Object.keys(translations).forEach(function (englishText) {
-            if (translatedText.includes(englishText)) {
-                translatedText = translatedText.replaceAll(
-                    englishText,
-                    translations[englishText]
-                );
-            }
-        });
-
-        node.nodeValue = translatedText;
+        if (translations[originalText]) {
+            node.nodeValue = node.nodeValue.replace(
+                originalText,
+                translations[originalText]
+            );
+        }
     }
 }
 
