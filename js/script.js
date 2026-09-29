@@ -471,8 +471,51 @@ const translations = {
     "Open navigation menu": "नेविगेशन मेनू खोलें",
 
     // Language
-    "English": "English",
-    "Hindi": "हिंदी"
+"English": "English",
+"Hindi": "हिंदी",
+
+// Puja Services page
+"A traditional Vedic chanting ritual performed with devotion and prescribed विधि.":
+    "भक्ति और निर्धारित विधि के अनुसार किया जाने वाला पारंपरिक वैदिक मंत्र जाप।",
+
+"A sacred Shiva puja performed through traditional Vedic rituals and offerings.":
+    "पारंपरिक वैदिक विधियों और पूजन सामग्री के साथ की जाने वाली पवित्र शिव पूजा।",
+
+"Traditional puja performed according to Vedic ritual practices for Mangal Dosh.":
+    "मंगल दोष के लिए वैदिक अनुष्ठान विधियों के अनुसार की जाने वाली पारंपरिक पूजा।",
+
+"A traditional ritual performed with श्रद्धा and Vedic विधि for Pitra-related observances.":
+    "पितृ संबंधी अनुष्ठानों के लिए श्रद्धा और वैदिक विधि से की जाने वाली पारंपरिक पूजा।",
+
+"A traditional Vedic puja performed according to established ritual practices.":
+    "प्रचलित अनुष्ठान विधियों के अनुसार की जाने वाली पारंपरिक वैदिक पूजा।",
+
+"Traditional Navgraha puja and ritual observances performed according to Vedic विधि.":
+    "वैदिक विधि के अनुसार की जाने वाली पारंपरिक नवग्रह पूजा और अनुष्ठान।",
+
+"Traditional Vedic puja and ritual services performed with devotion, proper विधि and श्रद्धा.":
+    "भक्ति, उचित विधि और श्रद्धा के साथ की जाने वाली पारंपरिक वैदिक पूजा एवं अनुष्ठान सेवाएँ।",
+
+"View Details":
+    "विवरण देखें",
+
+"View All Services":
+    "सभी पूजा सेवाएँ देखें",
+
+"Our Services":
+    "हमारी सेवाएँ",
+
+"Puja & Ritual Services":
+    "पूजा एवं अनुष्ठान सेवाएँ",
+
+"Gallery":
+    "गैलरी",
+
+"Moments of Puja & Devotion":
+    "पूजा एवं भक्ति के विशेष क्षण",
+
+"View Full Gallery":
+    "पूरी गैलरी देखें"
 };
 
 function translatePageToHindi() {
