@@ -4631,3 +4631,21 @@ h4,
         object-fit: contain;
     }
 }
+/* Language Toggle */
+.language-toggle {
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+    background: var(--gold);
+    color: #241514;
+}

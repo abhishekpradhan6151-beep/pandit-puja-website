@@ -107,3 +107,103 @@ if (contactPageForm) {
         window.location.href = whatsappURL;
     });
 }
+/* =========================================
+   ENGLISH / HINDI LANGUAGE TOGGLE
+   ========================================= */
+
+const languageToggle = document.querySelector("#language-toggle");
+
+const translations = {
+    "Home": "होम",
+    "Puja Services": "पूजा सेवाएँ",
+    "About": "परिचय",
+    "Online Puja": "ऑनलाइन पूजा",
+    "Gallery": "गैलरी",
+    "Contact": "संपर्क",
+    "Book a Puja": "पूजा बुक करें",
+    "WhatsApp Us": "व्हाट्सऐप करें",
+    "Talk to Pandit Ji": "पंडित जी से बात करें",
+    "Call Pandit Ji": "पंडित जी को कॉल करें",
+
+    "Mahamrityunjaya Jaap": "महामृत्युंजय जाप",
+    "Rudrabhishek": "रुद्राभिषेक",
+    "Mangal Dosh Pooja": "मंगल दोष पूजा",
+    "Pitra Dosh Poojan": "पितृ दोष पूजन",
+    "Kaal Sarp Dosh Pooja": "काल सर्प दोष पूजा",
+    "Navgraha Shanti": "नवग्रह शांति",
+
+    "Traditional Vedic Puja & Ritual Services": "पारंपरिक वैदिक पूजा एवं अनुष्ठान सेवाएँ",
+    "All India Online Puja": "पूरे भारत में ऑनलाइन पूजा",
+    "Ujjain, Madhya Pradesh": "उज्जैन, मध्य प्रदेश",
+
+    "Quick Links": "महत्वपूर्ण लिंक",
+    "Contact Us": "संपर्क करें",
+    "Booking": "बुकिंग",
+    "Privacy Policy": "गोपनीयता नीति",
+
+    "English": "English",
+    "Hindi": "हिंदी"
+};
+
+function translatePageToHindi() {
+    const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        {
+            acceptNode: function (node) {
+                if (
+                    !node.parentElement ||
+                    ["SCRIPT", "STYLE", "NOSCRIPT"].includes(node.parentElement.tagName)
+                ) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+
+                return node.nodeValue.trim()
+                    ? NodeFilter.FILTER_ACCEPT
+                    : NodeFilter.FILTER_REJECT;
+            }
+        }
+    );
+
+    while (walker.nextNode()) {
+        const node = walker.currentNode;
+        const originalText = node.nodeValue.trim();
+
+        if (translations[originalText]) {
+            node.nodeValue = node.nodeValue.replace(
+                originalText,
+                translations[originalText]
+            );
+        }
+    }
+}
+
+function restoreEnglish() {
+    location.reload();
+}
+
+if (languageToggle) {
+    languageToggle.addEventListener("click", function () {
+        const currentLanguage = localStorage.getItem("siteLanguage") || "en";
+
+        if (currentLanguage === "en") {
+            localStorage.setItem("siteLanguage", "hi");
+            translatePageToHindi();
+            document.documentElement.lang = "hi";
+            languageToggle.textContent = "English";
+        } else {
+            localStorage.setItem("siteLanguage", "en");
+            restoreEnglish();
+        }
+    });
+}
+
+if (localStorage.getItem("siteLanguage") === "hi") {
+    translatePageToHindi();
+
+    if (languageToggle) {
+        languageToggle.textContent = "English";
+    }
+
+    document.documentElement.lang = "hi";
+}
