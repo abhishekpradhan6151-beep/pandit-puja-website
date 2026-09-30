@@ -762,6 +762,11 @@ select {
     flex-direction: column;
     align-items: stretch;
   }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
   .btn {
     width: 100%;
