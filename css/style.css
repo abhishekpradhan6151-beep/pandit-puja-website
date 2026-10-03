@@ -203,7 +203,6 @@ select {
   background: var(--secondary);
   color: var(--dark);
 }
-
 .whatsapp-btn {
     background: #25d366;
     color: #fff;
@@ -286,7 +285,6 @@ select {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-
 .about-name {
     text-align: center;
     padding: 18px 10px 0;
@@ -306,7 +304,6 @@ select {
     font-size: 1.45rem;
     font-weight: 700;
 }
-
 .about-info-box {
     padding: 32px;
     background: #fff;
@@ -367,7 +364,6 @@ select {
     border-radius: 18px;
     box-shadow: 0 12px 35px rgba(60, 30, 20, 0.10);
 }
-
 .trust-item h3 {
     margin: 0;
     color: var(--primary);
@@ -448,7 +444,6 @@ select {
   background: var(--primary);
   color: var(--white);
 }
-
 .trust-section .section-title {
     margin-bottom: 30px;
 }
@@ -484,6 +479,224 @@ select {
 .trust-card p {
   color: rgba(255,255,255,0.82);
 }
+
+/* -------------------------
+   GALLERY
+   ------------------------- */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-item {
+  height: 260px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* -------------------------
+   BOOKING
+   ------------------------- */
+
+.booking-section {
+  background: var(--cream);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 45px;
+  align-items: start;
+}
+
+.booking-info h2 {
+  color: var(--primary);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.booking-info p {
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.booking-form {
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fffdf9;
+  color: var(--dark);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(217, 154, 43, 0.12);
+}
+
+/* -------------------------
+   FAQ
+   ------------------------- */
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+}
+
+.faq-item h3 {
+  color: var(--primary);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  color: var(--muted);
+}
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+.site-footer {
+  background: #24120e;
+  color: rgba(255,255,255,0.82);
+  padding: 65px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-column h3 {
+  color: var(--white);
+  margin-bottom: 18px;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 9px;
+  color: rgba(255,255,255,0.72);
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin-top: 45px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* FLOATING BUTTONS */
+
+.floating-call,
+.floating-whatsapp {
+    position: fixed;
+    bottom: 24px;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    z-index: 900;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.floating-call {
+    left: 24px;
+}
+
+.floating-whatsapp {
+    right: 24px;
+}
+
+.floating-call img,
+.floating-whatsapp img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .floating-call,
+    .floating-whatsapp {
+        width: 56px;
+        height: 56px;
+        bottom: 18px;
+    }
+
+    .floating-call {
+        left: 16px;
+    }
+
+    .floating-whatsapp {
+        right: 16px;
+    }
+}
+
+/* -------------------------
+   RESPONSIVE
+   ------------------------- */
+
 @media (max-width: 900px) {
 
   .nav-links {
@@ -549,12 +762,11 @@ select {
     flex-direction: column;
     align-items: stretch;
   }
-
   .hero-buttons {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
+}
 
   .btn {
     width: 100%;
@@ -579,7 +791,6 @@ select {
     gap: 30px;
   }
 }
-
 /* =========================
    MOBILE & TABLET NAVIGATION
    ========================= */
@@ -623,10 +834,9 @@ select {
         padding: 0.7rem 0;
     }
 }
-
 /* ================================
    SERVICES GRID - PREMIUM LAYOUT
-   ================================ */
+================================ */
 
 .services-grid {
     display: grid;
@@ -694,7 +904,6 @@ select {
         height: 210px;
     }
 }
-
 /* SERVICE DETAIL HERO - TWO COLUMN LAYOUT */
 
 .service-detail-hero .service-detail-content {
@@ -740,7 +949,6 @@ select {
         height: 320px;
     }
 }
-
 /* =========================================
    PREMIUM SERVICE DETAIL PAGE
    ========================================= */
@@ -830,6 +1038,7 @@ select {
     font-size: 1.1rem;
 }
 
+
 /* =========================================
    INFORMATION SECTION
    ========================================= */
@@ -883,6 +1092,7 @@ select {
     line-height: 1.8;
 }
 
+
 /* =========================================
    BOOKING CTA
    ========================================= */
@@ -920,11 +1130,17 @@ select {
     justify-content: center;
     margin-bottom: 0;
 }
+
+
 /* =========================================
-   RESPONSIVE SERVICE DETAIL PAGE
+   MOBILE SERVICE PAGE
    ========================================= */
 
 @media (max-width: 900px) {
+
+    .service-detail-hero {
+        padding: 55px 0;
+    }
 
     .service-detail-content {
         grid-template-columns: 1fr;
@@ -932,39 +1148,46 @@ select {
     }
 
     .service-detail-text {
-        max-width: 100%;
+        max-width: none;
+    }
+
+    .service-detail-image {
+        order: 2;
     }
 
     .service-detail-image img {
-        height: 420px;
+        height: 400px;
+        object-fit: contain;
     }
 
     .info-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .service-info-section,
+    .service-cta {
+        padding: 65px 0;
     }
 }
+
 
 @media (max-width: 600px) {
 
     .service-detail-hero {
-        padding: 60px 0;
-    }
-
-    .service-detail-content {
-        gap: 30px;
+        padding: 40px 0;
     }
 
     .service-detail-text h1 {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
     .service-intro {
         font-size: 1rem;
+        line-height: 1.7;
     }
 
     .service-buttons {
         flex-direction: column;
-        align-items: stretch;
     }
 
     .service-buttons .btn {
@@ -973,106 +1196,58 @@ select {
     }
 
     .service-detail-image img {
-        height: 320px;
+        height: 300px;
+        object-fit: contain;
     }
 
-    .service-info-section {
-        padding: 65px 0;
+    .service-highlights {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .info-grid {
-        grid-template-columns: 1fr;
+    .highlight-item {
+        justify-content: center;
     }
 
     .info-card {
-        padding: 24px;
-    }
-
-    .service-cta {
-        padding: 65px 0;
+        padding: 25px;
     }
 
     .cta-content {
         padding: 40px 22px;
     }
 }
+/* Typography & Button Spacing */
 
-/* =========================================
-   GALLERY PAGE
-   ========================================= */
-
-.gallery-page {
-    padding: 80px 0;
-    background: var(--cream);
+body {
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-.gallery-page-header {
-    max-width: 750px;
-    margin: 0 auto 50px;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+.brand-name {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.2px;
 }
 
-.gallery-page-header h1 {
-    margin-bottom: 15px;
-    color: var(--primary);
-    font-size: clamp(2.4rem, 5vw, 4rem);
-}
-
-.gallery-page-header p {
-    color: var(--muted);
+.service-detail-text p {
     line-height: 1.8;
-    font-size: 1.05rem;
 }
 
-.gallery-page-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+.service-buttons,
+.service-cta .service-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.gallery-page-item {
-    overflow: hidden;
-    border-radius: 18px;
-    background: var(--white);
-    box-shadow: 0 10px 30px rgba(60, 30, 20, 0.08);
+.service-buttons .btn {
+    margin: 0;
 }
 
-.gallery-page-item img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gallery-page-item:hover img {
-    transform: scale(1.05);
-}
-
-/* Gallery Mobile */
-
-@media (max-width: 900px) {
-    .gallery-page-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-
-    .gallery-page {
-        padding: 60px 0;
-    }
-
-    .gallery-page-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .gallery-page-item img {
-        height: 260px;
-    }
-}
- .service-detail-text .btn {
+.service-detail-text .btn {
     margin-right: 0;
 }
 
@@ -1429,7 +1604,6 @@ select {
     justify-content: flex-start;
     padding-top: 55px;
 }
-
 /* DECORATIVE LEAF UNDER PANDIT NAME */
 
 .about-name strong::after {
@@ -1440,7 +1614,6 @@ select {
     font-size: 1.5rem;
     line-height: 1;
 }
-
 /* =================================
    PREMIUM ONLINE PUJA SECTION
    ================================= */
@@ -1530,87 +1703,74 @@ select {
     gap: 12px;
 }
 
-.online-puja-point > span {
+.online-puja-point span {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
-    background: #fff8ed;
-    border: 1px solid rgba(217, 154, 43, 0.2);
+    background: var(--cream);
+    border: 1px solid rgba(217, 154, 43, 0.25);
     border-radius: 50%;
-    font-size: 1.2rem;
+    color: var(--secondary);
+    font-weight: 700;
 }
 
-.online-puja-point strong {
-    display: block;
-    color: var(--primary);
-    font-size: 0.98rem;
+.online-puja-point p {
+    margin: 0;
+    color: var(--text);
 }
 
-.online-puja-point small {
-    display: block;
-    margin-top: 3px;
-    color: var(--muted);
-    font-size: 0.85rem;
+.online-puja-info .btn {
+    margin-top: 5px;
 }
+
+/* VISUAL CARD */
 
 .online-puja-visual {
-    position: relative;
-    min-height: 500px;
-    overflow: hidden;
-    background:
-        linear-gradient(
-            135deg,
-            rgba(139, 30, 30, 0.08),
-            rgba(217, 154, 43, 0.12)
-        );
-}
-
-.online-puja-visual img {
-    width: 100%;
-    height: 100%;
-    min-height: 500px;
-    display: block;
-    object-fit: cover;
-}
-
-.online-puja-badge {
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    padding: 12px 18px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
-    color: var(--primary);
-    font-size: 0.9rem;
-    font-weight: 700;
-    box-shadow: 0 8px 25px rgba(60, 30, 20, 0.12);
-}
-
-/* Online Puja Button */
-
-.online-puja-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 14px 24px;
-    background: var(--primary);
-    color: #fff;
-    border-radius: 50px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.3s ease, background 0.3s ease;
+    min-height: 430px;
+    padding: 35px;
+    background:
+        linear-gradient(rgba(101, 19, 19, 0.78), rgba(101, 19, 19, 0.78)),
+        var(--cream);
+    box-shadow: 0 15px 40px rgba(60, 30, 20, 0.10);
 }
 
-.online-puja-btn:hover {
-    background: var(--primary-dark);
-    transform: translateY(-3px);
+.online-puja-card {
+    width: 100%;
+    max-width: 390px;
+    padding: 45px 35px;
+    text-align: center;
+    background: rgba(255, 248, 237, 0.97);
+    border: 1px solid rgba(231, 184, 75, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(30, 10, 10, 0.15);
 }
 
-/* Online Puja Responsive */
+.online-puja-symbol {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--secondary);
+    font-size: 4rem;
+}
+
+.online-puja-card h3 {
+    margin: 0 0 15px;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.online-puja-card p {
+    margin: 0;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -1619,18 +1779,21 @@ select {
     }
 
     .online-puja-visual {
-        min-height: 400px;
+        min-height: 350px;
     }
 
-    .online-puja-visual img {
-        min-height: 400px;
-    }
 }
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
     .online-puja-section {
-        padding: 65px 0;
+        padding: 65px 16px;
+    }
+
+    .online-puja-section .section-heading {
+        margin-bottom: 35px;
     }
 
     .online-puja-info {
@@ -1643,17 +1806,41 @@ select {
 
     .online-puja-info > p {
         font-size: 1rem;
+        line-height: 1.75;
     }
 
-    .online-puja-visual,
-    .online-puja-visual img {
-        min-height: 320px;
+    .online-puja-visual {
+        min-height: 300px;
+        padding: 20px;
     }
 
-    .online-puja-badge {
-        left: 18px;
-        bottom: 18px;
+    .online-puja-card {
+        padding: 35px 22px;
     }
+
+}
+.online-om {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    color: var(--secondary);
+    background: var(--cream);
+    border: 1px solid rgba(217, 154, 43, 0.25);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* ONLINE PUJA — VISUAL FIRST */
+
+.online-puja-visual {
+    order: 1;
+}
+
+.online-puja-info {
+    order: 2;
 }
 /* ONLINE PUJA IMAGE */
 
@@ -1695,7 +1882,6 @@ select {
         object-fit: cover;
     }
 }
-
 /* =================================
    PREMIUM GALLERY
    ================================= */
@@ -1724,77 +1910,53 @@ select {
 }
 
 .gallery-item img {
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.45s ease;
 }
 
 .gallery-item:hover img {
     transform: scale(1.05);
 }
 
-.gallery-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    padding: 22px;
-    background: linear-gradient(
-        to top,
-        rgba(60, 30, 20, 0.65),
-        transparent 55%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-.gallery-overlay h3 {
-    margin: 0;
-    color: #fff;
-    font-size: 1.1rem;
-}
-
-/* Gallery Responsive */
-
 @media (max-width: 900px) {
-    .gallery-section {
-        padding: 70px 0;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 20px;
+        padding: 0 24px;
     }
 }
 
 @media (max-width: 600px) {
     .gallery-section {
-        padding: 60px 0;
+        padding: 65px 16px;
     }
 
     .gallery-grid {
         grid-template-columns: 1fr;
+        padding: 0;
         gap: 18px;
-        padding: 0 16px;
     }
 
     .gallery-item {
-        height: 270px;
+        height: 300px;
     }
-
-    .gallery-overlay {
-        opacity: 1;
-    }
+}
+.faq-section .section-heading {
+    margin-bottom: 30px;
 }
 /* =========================
    PREMIUM FAQ
 ========================= */
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
 .faq-item {
     background: #fff;
@@ -1835,67 +1997,213 @@ select {
 
 .faq-item p {
     margin: 0;
-    padding: 0 24px 20px;
+    padding: 0 24px 24px;
     color: var(--muted);
-    line-height: 1.7;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
-/* =========================
-   TRUST SECTION - PREMIUM
-========================= */
+@media (max-width: 600px) {
+    .faq-list {
+        padding: 0 16px;
+    }
 
-.trust-section {
+    .faq-item summary {
+        padding: 19px 50px 19px 20px;
+        font-size: 1rem;
+    }
+
+    .faq-item p {
+        padding: 0 20px 20px;
+    }
+}
+/* ==============================
+   BOOKING PAGE
+   ============================== */
+
+.booking-page {
+    padding: 90px 0;
     background: var(--cream);
-    color: var(--text);
+    min-height: 80vh;
 }
 
-.trust-section .section-heading {
-    margin-bottom: 45px;
-}
-
-.trust-section .section-heading h2 {
-    color: var(--primary);
-}
-
-.trust-section .section-heading p {
-    color: var(--muted);
-}
-
-.trust-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.trust-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.booking-page .section-heading {
+    max-width: 760px;
+    margin: 0 auto 45px;
     text-align: center;
-    gap: 12px;
-    padding: 32px 22px;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 12px 35px rgba(60, 30, 20, 0.10);
 }
 
-.trust-item h3 {
-    margin: 0;
+.booking-page .section-heading h1 {
+    margin: 0 0 18px;
     color: var(--primary);
-    font-size: 1.35rem;
+    font-size: clamp(2.4rem, 5vw, 4rem);
 }
 
-.trust-item p {
-    margin: 0;
+.booking-page .section-heading > p:last-child {
     color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.booking-box {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #fff;
+    border: 1px solid rgba(139, 30, 30, 0.10);
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(60, 30, 20, 0.10);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(139, 30, 30, 0.18);
+    border-radius: 10px;
+    background: #fffdf9;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(217, 154, 43, 0.12);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.booking-box .btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.booking-note {
+    margin: 18px 0 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
     line-height: 1.6;
 }
 
-.trust-item strong {
-    color: var(--dark);
+@media (max-width: 600px) {
+    .booking-page {
+        padding: 55px 0;
+    }
+
+    .booking-box {
+        padding: 28px 20px;
+        border-radius: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+ .trust-section .trust-list {
+    margin-top: -180px;
+}
+.trust-section {
+    padding: 25px 0 70px;
 }
 
-/* Trust Icons */
+.trust-section .trust-list {
+    margin-top: 0;
+}
+.trust-section .section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+/* ========================================
+   WHY CHOOSE US — PREMIUM DESIGN
+======================================== */
+
+.trust-section {
+    padding: 55px 0 70px;
+    background: var(--primary);
+    color: #fff;
+}
+
+.trust-section .section-heading {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.trust-section .section-label {
+    margin: 0;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.trust-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.trust-ornament span:first-child,
+.trust-ornament span:last-child {
+    width: 80px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.trust-ornament span:nth-child(2) {
+    color: var(--gold);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.trust-section .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.trust-section .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 255px;
+    padding: 28px 25px 30px;
+    text-align: center;
+    background: #fffdf8;
+    border: 1px solid rgba(217,154,43,.18);
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(60,30,20,.12);
+    box-sizing: border-box;
+}
 
 .trust-icon {
     display: flex;
@@ -1964,12 +2272,10 @@ select {
         margin-bottom: 15px;
     }
 }
-
 .trust-section .trust-grid {
     padding-left: 50px;
     padding-right: 50px;
 }
-
 .trust-icon svg {
     width: 32px;
     height: 32px;
@@ -1979,7 +2285,6 @@ select {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
-
 .trust-section .trust-icon svg {
     width: 32px;
     height: 32px;
@@ -1989,6 +2294,224 @@ select {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+/* ================= CONTACT SECTION ================= */
+
+.site-footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 75px 0 0;
+}
+
+.contact-heading {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact-heading > p:first-child {
+    margin: 0 0 10px;
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.contact-heading h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+.contact-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.contact-ornament span {
+    width: 80px;
+    height: 1px;
+    background: var(--secondary);
+}
+
+.contact-ornament strong {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contact-intro {
+    margin: 0;
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* Main Contact Cards */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 16px;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.contact-info-card,
+.contact-form-card,
+.contact-image-card {
+    background: #fffdf8;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(60, 30, 20, .12);
+}
+
+.contact-info-card,
+.contact-form-card {
+    padding: 32px;
+}
+
+.contact-info-card h3,
+.contact-form-card h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.7rem;
+    line-height: 1.3;
+}
+
+.contact-line {
+    width: 80px;
+    height: 3px;
+    margin: 12px 0 28px;
+    background: var(--secondary);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.contact-detail:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+.contact-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+}
+
+.contact-detail h4 {
+    margin: 0 0 5px;
+    color: var(--primary);
+    font-size: 1.15rem;
+}
+
+.contact-detail a,
+.contact-detail p {
+    display: block;
+    margin: 3px 0;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.contact-detail a:hover {
+    color: var(--secondary);
+}
+
+.contact-detail p {
+    font-size: .95rem;
+}
+
+
+/* Contact Form */
+
+.contact-form-intro {
+    margin: 0 0 20px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.contact-form-group {
+    margin-bottom: 14px;
+}
+
+.contact-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--primary);
+    font-size: .95rem;
+    font-weight: 700;
+}
+
+.contact-form-group input,
+.contact-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid rgba(139, 30, 30, .18);
+    border-radius: 9px;
+    background: #fff;
+    color: var(--text);
+    font-family: inherit;
+    font-size: .95rem;
+    outline: none;
+}
+
+.contact-form-group input:focus,
+.contact-form-group select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(217, 154, 43, .12);
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.contact-submit-btn {
+    width: 100%;
+    margin-top: 5px;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .3s ease, background .3s ease;
+}
+
+.contact-submit-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+
 /* Contact Image */
 
 .contact-image-card {
@@ -2148,7 +2671,8 @@ select {
         padding: 10px 0;
         border-radius: 16px;
     }
-        .contact-feature,
+
+    .contact-feature,
     .contact-feature:nth-child(2),
     .contact-feature:nth-child(3),
     .contact-feature:nth-child(4) {
@@ -2365,6 +2889,7 @@ select {
     border-color: var(--gold);
     box-shadow: 0 0 0 3px rgba(231, 184, 75, 0.14);
 }
+
 .contact-page-form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2569,6 +3094,7 @@ select {
     flex-wrap: wrap;
     gap: 14px;
 }
+
 .cta-buttons .btn {
     min-width: 175px;
     box-sizing: border-box;
@@ -2711,53 +3237,6 @@ select {
 }
 
 
-/* Profile */
-
-.about-page-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-page-image-wrap {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 22px;
-    box-shadow: 0 14px 35px rgba(60, 30, 20, 0.12);
-}
-
-.about-page-image-wrap img {
-    display: block;
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-}
-
-.about-page-name {
-    margin-top: 18px;
-    text-align: center;
-}
-
-.about-page-name .section-label {
-    margin: 0 0 8px;
-    color: var(--gold);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.about-page-name h2 {
-    margin: 0;
-    color: var(--primary);
-    font-size: 1.7rem;
-    line-height: 1.3;
-}
-
-.about-page-name p {
-    margin: 8px 0 0;
-    color: var(--muted);
-    font-size: 0.95rem;
-}
 /* Profile */
 
 .about-page-profile {
@@ -2927,6 +3406,7 @@ select {
 
 
 /* WhatsApp button */
+
 .about-page-button {
     align-self: flex-start;
     display: inline-flex;
@@ -3105,6 +3585,8 @@ select {
 .gallery-item:hover img {
     transform: scale(1.05);
 }
+
+
 /* Gallery CTA */
 
 .gallery-cta {
@@ -3285,7 +3767,7 @@ select {
 
 .services-page-heading h1 {
     margin: 0 0 18px;
-        color: var(--primary);
+    color: var(--primary);
     font-size: clamp(2.2rem, 5vw, 3.6rem);
 }
 
@@ -3465,6 +3947,7 @@ select {
 .whatsapp-top .top-info-icon {
     color: #25d366;
 }
+
 .top-info-divider {
     width: 1px;
     height: 19px;
@@ -3643,7 +4126,8 @@ select {
     }
 
     /* Book button */
-        .header-book-btn {
+
+    .header-book-btn {
         flex: 0 0 auto;
         min-width: auto;
         padding: 11px 16px;
@@ -3823,7 +4307,7 @@ select {
 .legal-intro {
     line-height: 1.8;
     margin: 0 auto;
-        color: #66554c;
+    color: #66554c;
 }
 
 .legal-content {
@@ -4003,7 +4487,7 @@ select {
 @media (max-width: 900px) {
     .main-footer {
         padding: 60px 30px 0;
-            }
+    }
 
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
